@@ -14,6 +14,7 @@ const broadcast = (data, ws) => {
 }
 
 wss.on('connection', (ws) => {
+  "use strict";
   let index;
   ws.on('message', (message) => {
     const data = JSON.parse(message);
@@ -49,5 +50,5 @@ wss.on('connection', (ws) => {
       users
     }, ws);
   });
-  
+
 })
