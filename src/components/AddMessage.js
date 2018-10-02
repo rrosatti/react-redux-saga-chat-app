@@ -1,21 +1,22 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+// constructor(props) {
+//   super(props);
+//   this.handleOnKeyPress = this.handleOnKeyPress.bind(this);
+// }
+//
+// let input;
+//
+// handleOnKeyPress(e) {
+//   e.preventDefault();
+//   if (e.key === 'Enter') {
+//     this.props.dispatch(input.value, 'Me');
+//     input.value = '';
+//   }
+// }
+
 const AddMessage = (props) => {
-  // constructor(props) {
-  //   super(props);
-  //   this.handleOnKeyPress = this.handleOnKeyPress.bind(this);
-  // }
-  //
-  // let input;
-  //
-  // handleOnKeyPress(e) {
-  //   e.preventDefault();
-  //   if (e.key === 'Enter') {
-  //     this.props.dispatch(input.value, 'Me');
-  //     input.value = '';
-  //   }
-  // }
   let input;
 
   return (
@@ -25,11 +26,12 @@ const AddMessage = (props) => {
           props.dispatch(input.value, 'Me');
           input.value = '';
         }
-      }}
-      type="text"
-      ref={node => {
-        input = node;
-      }} />
+        }}
+        type="text"
+        ref={node => {
+          input = node;
+        }}
+      />
     </section>
   );
 

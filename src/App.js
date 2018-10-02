@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { SideBar } from './containers/Sidebar';
+import { SideBar } from './containers/SideBar';
 import { MessagesList } from './containers/MessagesList';
 import { AddMessage } from './containers/AddMessage';
 
