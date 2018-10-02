@@ -1,4 +1,4 @@
-import * as types from '../constantt/ActionTypes';
+import * as types from '../constants/ActionTypes';
 
 const messages = (state = [], action) => {
   switch (action.type) {
